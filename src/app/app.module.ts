@@ -6,18 +6,24 @@ import { UserComponent } from './user/user.component';
 import { FormsModule } from '@angular/forms';
 import { UsersComponent } from './users/users.component';
 import { AddUserComponent } from './add-user/add-user.component';
+import { DragDropUploadComponent } from './drag-drop-upload/drag-drop-upload.component';
+import { DragDropDirective } from './drag-drop-upload/drag-drop.directive';
+import { ImageCropperModule } from 'ngx-image-cropper';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     UsersComponent,
-    AddUserComponent
+    AddUserComponent,
+    DragDropUploadComponent,
+    DragDropDirective,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ImageCropperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
